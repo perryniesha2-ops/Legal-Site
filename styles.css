@@ -38,3 +38,104 @@ code,kbd{background:#0d1226;padding:0 .25em;border-radius:4px}
 /* Optional: tighten spacing a bit */
 .brand { gap: 8px; }
 .site-header, .site-footer { padding: 12px 20px; }
+
+/* --- Contact form styles --- */
+.form {
+  max-width: 760px;
+  margin: 48px auto 72px;
+  background: var(--panel);
+  border: 1px solid #1b2447;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.form h1 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+}
+
+.form .lead {
+  color: var(--muted);
+  margin: 0 0 20px;
+}
+
+.form .grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+}
+
+.form .field {
+  grid-column: 1 / -1;
+}
+
+.form .field.half {
+  grid-column: span 6;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.form input,
+.form textarea,
+.form button {
+  width: 100%;
+  font: inherit;
+}
+
+.form input,
+.form textarea {
+  background: #0d1226;
+  color: var(--text);
+  border: 1px solid #25315f;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+.form .actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.form button {
+  cursor: pointer;
+  border-radius: 999px;
+  border: 1px solid #2c3b79;
+  background: transparent;
+  padding: 12px 18px;
+  color: var(--text);
+}
+
+.form button:hover {
+  filter: brightness(1.1);
+}
+
+.form .hint {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Mobile tweaks */
+@media (max-width: 720px) {
+  .form .field.half { grid-column: 1 / -1; }
+}
+
