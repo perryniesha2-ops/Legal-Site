@@ -1,0 +1,7 @@
+:root{--bg:#0b1020;--panel:#121833;--text:#e6e8ef;--muted:#9aa3b2;--link:#93c5fd;color-scheme:dark}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Inter,Arial,sans-serif}
+.container{max-width:820px;margin:24px auto;padding:0 24px}
+.site-header,.site-footer{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:var(--panel);border-bottom:1px solid #1b2447}
+.site-footer{border-top:1px solid #1b2447;border-bottom:none}
+.brand{display:flex;gap:10px;align-items:center;text-decoration:none;color:var(--text);font-weight:600}
+a{color:var(--link);text-underline-offset:3px}
