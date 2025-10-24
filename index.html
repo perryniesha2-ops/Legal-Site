@@ -1,16 +1,39 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Legal • Scouta</title><link rel="stylesheet" href="./styles.css">
-</head><body>
-<header class="site-header"><a class="brand" href="/"><img src="./assets/logo.svg" alt="Scouta" height="28"><span>Scouta</span></a></header>
-<main class="container" style="text-align:center;margin-top:60px">
-  <h1>Scouta Legal Center</h1>
-  <ul style="list-style:none;padding:0">
-    <li><a href="./privacy.html">Privacy Policy</a></li>
-    <li><a href="./terms.html">Terms of Service</a></li>
-    <li><a href="./contact.html">Contact Support</a></li>
-  </ul>
-</main>
-<footer class="site-footer"><p>© <span id="y"></span> Scouta • <a href="./terms.html">Terms</a> • <a href="./privacy.html">Privacy</a></p></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Legal • Scouta</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <style>
+    main { text-align:center; margin-top:60px; }
+    h1 { margin-bottom:16px; }
+    ul { list-style:none; padding:0; margin:20px auto; }
+    li { margin:10px 0; }
+    a { color:var(--link); font-weight:500; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="brand">
+      <img src="./assets/logo.svg" alt="Scouta logo" height="1" />
+    </a>
+  </header>
+
+  <main class="container">
+    <h1>Scouta Legal Center</h1>
+    <p>Welcome to our legal and support hub. Choose a section below:</p>
+    <ul>
+      <li><a href="./privacy.html">Privacy Policy</a></li>
+      <li><a href="./terms.html">Terms of Service</a></li>
+      <li><a href="./contact.html">Contact Support</a></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="y"></span> Scouta • <a href="./terms.html">Terms</a> • <a href="./privacy.html">Privacy</a></p>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
