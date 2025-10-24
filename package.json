@@ -1,0 +1,29 @@
+{
+  "name": "legal-site",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000L\u0000e\u0000g\u0000a\u0000l\u0000-\u0000S\u0000i\u0000t\u0000e\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perryniesha2-ops/Legal-Site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/perryniesha2-ops/Legal-Site/issues"
+  },
+  "homepage": "https://github.com/perryniesha2-ops/Legal-Site#readme",
+  "dependencies": {
+    "resend": "^6.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "@vercel/node": "^5.5.0",
+    "typescript": "^5.9.3"
+  }
+}
