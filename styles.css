@@ -27,3 +27,14 @@ code,kbd{background:#0d1226;padding:0 .25em;border-radius:4px}
   .container{padding:16px}
   .site-header,.site-footer{flex-direction:column;align-items:flex-start;gap:8px}
 }
+
+/* Smaller header logo across the site */
+.brand img {
+  height: 18px;        /* try 16–20px; pick what feels right */
+  width: auto;         /* keep aspect ratio */
+  vertical-align: middle;
+}
+
+/* Optional: tighten spacing a bit */
+.brand { gap: 8px; }
+.site-header, .site-footer { padding: 12px 20px; }

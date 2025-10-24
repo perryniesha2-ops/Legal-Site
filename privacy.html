@@ -1,9 +1,89 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Privacy Policy • Scouta</title><link rel="stylesheet" href="./styles.css">
-</head><body>
-<header class="site-header"><a class="brand" href="/"><img src="./assets/logo.svg" height="28" alt="Scouta"><span>Scouta</span></a></header>
-<main class="container"><h1>Privacy Policy</h1><p><strong>Effective:</strong> 2025-10-24</p><p>Contact: <a href="mailto:legal@scout-a.com">legal@scout-a.com</a></p></main>
-<footer class="site-footer"><p>© <span id="y"></span> Scouta</p></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy • {{COMPANY_NAME}}</title>
+  <meta name="description" content="Privacy Policy for {{COMPANY_NAME}}." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="brand">
+      <img src="./assets/logo.svg" alt="{{COMPANY_NAME}} logo" height="28" />
+      <span>{{COMPANY_NAME}}</span>
+    </a>
+    <nav class="site-nav">
+      <a href="./terms.html">Terms</a>
+      <a href="./privacy.html" aria-current="page">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective date:</strong> {{EFFECTIVE_DATE}}</p>
+    <p>{{COMPANY_NAME}} (“we,” “us,” or “our”) respects your privacy. This policy explains what we collect, how we use it, and the choices you have.</p>
+
+    <h2>Information We Collect</h2>
+    <ul>
+      <li><strong>Account data:</strong> name, email, password hash, profile details you provide.</li>
+      <li><strong>Usage data:</strong> app interactions, device/browser type, pages viewed, timestamps, approximate location (from IP), referral URLs.</li>
+      <li><strong>Transactional data:</strong> subscription tier, billing history, and limited payment metadata (we never store full card numbers; payments are processed by {{PAYMENT_PROCESSOR}}).</li>
+      <li><strong>Support communications:</strong> messages you send to us (email or in-app).</li>
+      <li><strong>Cookies and similar:</strong> for authentication, preferences, analytics, and fraud prevention.</li>
+    </ul>
+
+    <h2>How We Use Information</h2>
+    <ul>
+      <li>Provide, secure, and maintain our services.</li>
+      <li>Process payments and manage subscriptions.</li>
+      <li>Understand usage to improve performance and features.</li>
+      <li>Communicate service updates, security alerts, and support.</li>
+      <li>Comply with legal obligations and enforce our Terms.</li>
+    </ul>
+
+    <h2>Legal Bases (EEA/UK)</h2>
+    <ul>
+      <li><strong>Contract:</strong> to provide the service you requested.</li>
+      <li><strong>Legitimate interests:</strong> to secure, improve, and market our services in a proportionate way.</li>
+      <li><strong>Consent:</strong> where required (e.g., certain cookies/marketing).</li>
+      <li><strong>Legal obligation:</strong> recordkeeping and compliance.</li>
+    </ul>
+
+    <h2>Sharing of Information</h2>
+    <p>We share data with service providers who help us operate the service (e.g., hosting, analytics, customer support, payment processing). They may only use your information per our instructions. We may also share information to comply with law, protect rights, or as part of a merger, acquisition, or asset sale.</p>
+
+    <h2>Data Retention</h2>
+    <p>We keep information for as long as necessary to provide the service, comply with law, resolve disputes, and enforce agreements. You may request deletion; see “Your Rights.”</p>
+
+    <h2>Your Rights</h2>
+    <ul>
+      <li><strong>Access, update, delete:</strong> contact us at <a href="mailto:{{PRIVACY_EMAIL}}">{{PRIVACY_EMAIL}}</a>.</li>
+      <li><strong>Portability & restriction (EEA/UK):</strong> request a copy or limit processing in certain cases.</li>
+      <li><strong>Opt-out of marketing:</strong> unsubscribe links in emails.</li>
+      <li><strong>Do Not Sell/Share (CA):</strong> we do not sell personal information as defined by the CCPA/CPRA.</li>
+      <li><strong>Cookies:</strong> control via your browser settings; some features require essential cookies.</li>
+    </ul>
+
+    <h2>International Transfers</h2>
+    <p>Your information may be processed in countries that may have different data protection laws than your country. Where required, we use appropriate safeguards (e.g., SCCs).</p>
+
+    <h2>Security</h2>
+    <p>We implement technical and organizational measures appropriate to the risk. No method of transmission or storage is 100% secure.</p>
+
+    <h2>Children’s Privacy</h2>
+    <p>Our service is not directed to children under 13 (or under 16 in the EEA). We do not knowingly collect information from children.</p>
+
+    <h2>Changes to this Policy</h2>
+    <p>We may update this policy. We will revise the “Effective date” and, when appropriate, notify you via the service or email.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? Email <a href="mailto:{{PRIVACY_EMAIL}}">{{PRIVACY_EMAIL}}</a> or write to: {{COMPANY_NAME}}, {{COMPANY_ADDRESS}}.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="y"></span> {{COMPANY_NAME}} • <a href="./terms.html">Terms</a> • <a href="./privacy.html">Privacy</a></p>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
