@@ -30,7 +30,7 @@ code,kbd{background:#0d1226;padding:0 .25em;border-radius:4px}
 
 /* Smaller header logo across the site */
 .brand img {
-  height: 18px;        /* try 16–20px; pick what feels right */
+  height: 25px;        /* try 16–20px; pick what feels right */
   width: auto;         /* keep aspect ratio */
   vertical-align: middle;
 }
