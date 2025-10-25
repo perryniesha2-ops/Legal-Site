@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About • Scouta</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="brand">
+      <img src="./assets/logo.svg" alt="Scouta logo" />
+      <span>Scouta</span>
+    </a>
+    <nav class="site-nav" aria-label="Legal navigation">
+      <a href="./about.html" aria-current="page">About</a>
+      <a href="./terms.html">Terms</a>
+      <a href="./privacy.html">Privacy</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card prose">
+      <h1>About Scouta</h1>
+      <p><strong>Scouta</strong> helps you quickly find and act on the opportunities that matter—without getting buried in noise. We combine streamlined workflows, clean design, and just-enough automation so you can focus on decisions, not dashboards.</p>
+
+      <h2>What we do</h2>
+      <ul>
+        <li><strong>Discovery:</strong> pull the signals you care about into one place.</li>
+        <li><strong>Prioritization:</strong> lightweight scoring and sorting to surface what’s worth doing now.</li>
+        <li><strong>Action:</strong> simple hand-offs and notifications so nothing falls through the cracks.</li>
+      </ul>
+
+      <h2>How it works</h2>
+      <p>Connect the sources you already use, set a few preferences, and let Scouta do the sifting. Your workspace stays fast, private, and easy to share with teammates when you’re ready.</p>
+
+      <h2>Privacy & security</h2>
+      <p>We keep data collection minimal and transparent. For full details, see our <a href="./privacy.html">Privacy Policy</a> and <a href="./terms.html">Terms of Service</a>.</p>
+
+      <h2>Questions?</h2>
+      <p>We’re here to help. Reach us at <a href="mailto:support@scout-a.com">support@scout-a.com</a> or use the <a href="./contact.html">Contact</a> page.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="y"></span> Scouta • <a href="./about.html">About</a> • <a href="./terms.html">Terms</a> • <a href="./privacy.html">Privacy</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
